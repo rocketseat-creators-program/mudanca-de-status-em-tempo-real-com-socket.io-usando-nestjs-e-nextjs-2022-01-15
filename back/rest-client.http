@@ -1,0 +1,37 @@
+GET http://localhost:3000/streamer HTTP/1.1
+###
+
+POST http://localhost:3000/streamer/create HTTP/1.1
+content-type: application/json
+
+{
+    "key": "gaules",
+    "name": "Gaules",
+    "status": false
+}
+###
+POST http://localhost:3000/streamer/create HTTP/1.1
+content-type: application/json
+
+{
+    "key": "mch_agg",
+    "name": "mch_AGG",
+    "status": false
+}
+###
+POST http://localhost:3000/streamer/create HTTP/1.1
+content-type: application/json
+
+{
+    "key": "liminhag0d",
+    "name": "liminhag0d",
+    "status": false
+}
+###
+
+PUT http://localhost:3000/streamer/1/update HTTP/1.1
+content-type: application/json
+
+{
+    "status": false
+}
